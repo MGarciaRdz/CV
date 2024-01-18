@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+#navbar  {
+   
+    background-color: lightgrey;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link{
+    position: relative;
+    border-radius: 30px;
+    background-color: #0011ff;
+    color: white;
+    /* box-shadow: 10px 10px 10px 0px black; */
+    margin: 10px;
+    transition:all 300ms ease;
+    border: none;
+    height: 50px;
+    
+}
+
+body * {
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slideIn 0.5s forwards;
+    animation-delay: calc(var(--order) * 100ms);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
